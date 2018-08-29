@@ -84,8 +84,9 @@ public class StringCalculator {
         int[] negatives = numbers.stream()
                 .mapToInt(e -> Integer.parseInt(e))     // Can throw NumberFormatException
                 .filter(e -> e < 0).toArray();
+
         if(negatives.length > 0)
-            throw new NegativeNumberException(Arrays.stream(negatives).mapToObj(Integer::toString)
+            throw new NegativeNumberException("Negatives not allowed: "+Arrays.stream(negatives).mapToObj(Integer::toString)
                     .collect(Collectors.joining(",")));
 
         return numbers.stream()

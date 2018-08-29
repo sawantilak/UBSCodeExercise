@@ -6,7 +6,7 @@ public class UBSMain {
         try {
             StringCalculator sc = new StringCalculator();
 
-            System.out.println(sc.add("//,|;\n1,2;3,-6;-6"));
+            System.out.println(sc.add("//,|;\n1,2;-3,6;-6"));
 //            System.out.println(sc.add("//*|%\n1*2%3"));
 //            System.out.println(sc.add("//***\n3***3***3"));
 //            System.out.println(sc.add("//***|%%\n4%%4***4"));
